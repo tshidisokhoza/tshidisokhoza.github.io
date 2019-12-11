@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <nav>
+    <ul class="topnav" id="dropdownClick">
+      <li><a class="active" href="#section-1-gradient">About Me</a></li>
+      <li><a href="#Section2">Experience</a></li>
+      <li><a href="#about">Projects</a></li>
+      <li><a href="#Section3">Skills</a></li>
+      
+      <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+    </ul>
+  </nav>
+ 
+  <div class="container" id="section-1-gradient">
+    <div class="row">
+      <div class="col-6">
+        <div class="leftSide-col">
+          <h1 class="large">About Me</h1>
+        </div>
+        <form>
+          <div class="leftSide-col">
+            <h2>My Name is Tshidiso I am a an IT Graduate from the Central University of Technolgy.</h2>
+          </div>
+        </form>
+      </div>
+      <div class="col-6">
+        <div class="rightSide-col">
+          <div class="videoContainer">
+            <img src="me.jpg" alt="" width="300px">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container" id="Section2">
+      <header>
+          <h1 class="section2Header">Work Experience</h1>
+        </header>
+    <div class="row">
+      <div class="col-4">
+        <div class="box">
+          <div class="icon">
+            <img src="">
+          </div>
+          <label>BCX</label>
+          <p>Worked at BCX as C# .Net Web Applicatications Developer </p>
+          <p>From February 2018 to January 2019 </p>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="box">
+          <div class="icon">
+          </div>
+          <label>DesSoft</label>
+          <p>Worked at DesSoft as C# Developer.</p>
+          <p>From February 2019</p>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="box">
+          <div class="icon">
+            <img src="">
+          </div>
+          <label>Standard Bank</label>
+          <p>Working at Standard Bank as Java backend Developer, Trained by Umuzi</p>
+          <p>From September 2019 to February 2021</p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+ 
+  <hr>
+  
+  <div class="container" id="Section3">
+      <header>
+          <h1 class="section2Header">Skills</h1>
+        </header>
+    <div class="row">
+      <div class="col-12">
+        <ul>
+          <li>C#</li>
+          <li>Java</li>
+          <li>Python</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>javascript</li>
+          <li>Android</li>
+          <li>Angular</li>
+          <li>Node JS</li>
+          <li>MS SqlServer</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+ 
+  
+  <footer class="footsy">
+    <div class="row">
+      <div class="col-3 mobileStack">
+        <h1>Contact</h1>
+        <ul style="color:white">
+            <li><a href="https://www.linkedin.com/in/tshidiso-khoza-3baa70164/">Linkedin</a></li>
+            <li><a href="https://twitter.com/Mr_K_92">Twitter</a></li>
+            <li><a href="">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+
+  
+  
+  <script>
+    function dropdownMenu() {
+      var x = document.getElementById("dropdownClick");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+
+</body>
+
+</html>
